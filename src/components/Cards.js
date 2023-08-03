@@ -9,7 +9,7 @@ function Cards() {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 gap-x-4 mt-8">
+    <div className="grid md:grid-cols-3 gap-x-4 mt-8">
       {cards.length &&
         cards.map((card) => (
           <div

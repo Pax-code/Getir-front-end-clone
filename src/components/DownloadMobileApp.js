@@ -2,7 +2,7 @@ import React from "react";
 
 function DownloadMobileApp() {
   return (
-    <div className="bg-[url('https://cdn.getir.com/getirweb-images/common/illustration/doodle.png')] bg-primary-brand-color mt-7 rounded-lg text-white flex justify-between items-center">
+    <div className="bg-[url('https://cdn.getir.com/getirweb-images/common/illustration/doodle.png')] bg-primary-brand-color mt-7 md:rounded-lg text-white flex flex-col md:flex-row justify-between items-center">
       <div className="flex flex-col gap-y-3 p-10">
         <h3 className="font-bold text-2xl tracking-tight">Getir'i indirin!</h3>
         <p className="font-semibold opacity-90">

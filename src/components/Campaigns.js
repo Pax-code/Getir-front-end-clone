@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Banners from "../api/banners.json";
 import Title from "../components/ui/Title";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -41,26 +42,56 @@ function Campaigns() {
     infinite: true,
     speed: 500,
     arrows: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     speed: 500,
     autoplaySpeed: 3000,
-    cssEase: "linear",
 
     nextArrow: <NextBtn />,
     prevArrow: <PrevtBtn />,
+
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="container mx-auto mt-10 mb-10">
-      <Title>Kampanyalar</Title>
-      <Slider {...settings} className="-mx-2">
+    <div className="container mx-auto md:mt-10 md:mb-10">
+      <div className="hidden md:block">
+        <Title>Kampanyalar</Title>
+      </div>
+      <Slider {...settings} className="md:-mx-2">
         {banners.length &&
           banners.map((banner) => (
             <div key={banner.id}>
-              <picture className="block px-2 ">
-                <img className="rounded-lg" src={banner.image} />
+              <picture className="block md:px-2 ">
+                <img className="md:rounded-lg" src={banner.image} />
               </picture>
             </div>
           ))}
