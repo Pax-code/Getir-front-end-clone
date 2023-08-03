@@ -1,3 +1,24 @@
+# Getir Front-End test project 
+
+## Tech-Stack 
+-Tailwind CSS <br/> 
+-React Js 
+
+## 3rd Party Libraries
+-React icons <br/> 
+-React slick <br/> 
+-React collapse 
+
+## Screen Shoots 
+
+![Screenshot_31](https://github.com/Pax-code/getir-front-end-clone/assets/58390807/087163e2-8d08-41b0-899d-4b4f8dd19174)
+
+![Screenshot_32](https://github.com/Pax-code/getir-front-end-clone/assets/58390807/584b1f7b-96f2-440d-adb7-cd36fb078fd8)
+
+![Screenshot_33](https://github.com/Pax-code/getir-front-end-clone/assets/58390807/8cea9697-fb8f-41f6-addf-99fd1adbb139)
+
+![Screenshot_34](https://github.com/Pax-code/getir-front-end-clone/assets/58390807/922cab12-f363-4f6d-920c-220b87d6d22d)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
